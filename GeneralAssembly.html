@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/normalize.css">
+    <title>Blog theme</title>
+    <style>
+        .banner {
+            background: #f4f3ee;
+            padding-bottom: 40px;
+            margin-bottom: 90px;
+        }
+
+        .navbar {
+
+            padding: 35px 0;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .technology {
+            background: #c69c72
+        }
+
+        img {
+            width: 500px;
+            height: 400px;
+            display: flex;
+            /*margin-left: auto;*/
+            /*margin-right: 20px;*/
+            /*margin-top: 50px;*/
+
+            border-radius: 1px;
+            margin: 0px 10px 10px auto;
+        }
+
+        .styledparagraph {
+            transform: translateY(250px);
+            text-align: center;
+            font-size: 25px;
+            font-weight: 100px;
+            font-family: helvetic;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .coloredbuttons {
+            outline: none;
+            background: #c69c72;
+            border-radius: 10px;
+            border: 1px solid #c69c89;
+        }
+
+
+        .introspan {
+            background: #c69c72;
+            font-size: 20px;
+            padding: 10px 95px 10px 20px;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 500px) {
+            .navbar ul li {
+                display: block;
+                padding: 5px;
+                margin: 0 auto;
+            }
+
+            img {
+                width: 180px;
+                height: 180px;
+                transform: translateY(-100px);
+                border-radius: 50%;
+                margin: 0px auto;
+            }
+
+            .styledparagraph {
+                margin-bottom: 60px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .navbar ul {
+                margin: 0px;
+
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+
+            article p {
+                font-size: 14px;
+            }
+
+            .introspan {
+                padding: 5px 20px 5px 2px;
+                margin-left: 0px;
+            }
+
+            .banner {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs</a></li>
+
+            </ul>
+        </div>
+
+        <p class="styledparagraph"> Tampa-based <i>blogger</i> with <br>a <b>passion</b> for <span
+                class="technology">technology</span> and <br><i>making</i> a <b>change.</b> </p>
+        <div>
+            <img src="https://imgur.com/KFXj2nz.jpg"></img>
+        </div>
+
+    </div>
+    <span class="introspan">Blogs by<b> me</b></span>
+
+    <article>
+        <h1> </h1>
+        <h2>How Technology changed the World</h2>
+        <p>Multi-functional technologies such as the wristwatch and smartphone have been made possible by modern
+            technology. Computers are becoming quicker, more portable, and more powerful than ever. All of these
+            technological advancements have made our life easier, faster, better, and more enjoyable.</p>
+        <button class="coloredbuttons">Like</button>
+    </article>
+    <article>
+        <h2>Why You should learn to Code</h2>
+        <p>Coding, in its most basic form, is just giving a task to a machine based on the logical rules you've
+            established. When broken down, very complicated jobs are simply a collection of simpler procedures. This
+            meticulous and logic-heavy approach to issue solving might be useful for figuring out difficulties that
+            aren't code-related.</p>
+        <button class="coloredbuttons">Like</button>
+    </article>
+    <article>
+        <h2>How easy is Programming?</h2>
+        <p>Programming is something that can only be learned via experience and discovery. It cannot be mastered simply
+            by memorizing definitions and syntax.
+            If you code frequently, the syntax will become second nature to you.
+            And, most importantly, programming necessitates the capacity to think rather than the ability to recall or
+            write/type.</p>
+        <button class="coloredbuttons">Like</button>
+    </article>
+
+    <script>
+        $("button").on("click", function () {
+            alert("Hooray! Glad You liked this blog!")
+        });
+
+    </script>
+
+</body>
+
+</html>
